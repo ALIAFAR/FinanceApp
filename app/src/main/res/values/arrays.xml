@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="category_icon">
+        <item>@drawable/ic_category_other</item>
+        <item>@drawable/ic_category_products</item>
+        <item>@drawable/ic_category_house</item>
+        <item>@drawable/ic_category_house_1</item>
+        <item>@drawable/ic_category_lunch</item>
+        <item>@drawable/ic_category_dinner</item>
+        <item>@drawable/ic_category_afternoon_tea</item>
+        <item>@drawable/ic_category_dessert</item>
+        <item>@drawable/ic_category_fitness</item>
+        <item>@drawable/ic_category_gift</item>
+        <item>@drawable/ic_category_medical</item>
+        <item>@drawable/ic_category_pet</item>
+        <item>@drawable/ic_category_phone</item>
+        <item>@drawable/ic_category_refueling</item>
+        <item>@drawable/ic_category_swim</item>
+        <item>@drawable/ic_category_traffic</item>
+        <item>@drawable/ic_category_video_game</item>
+        <item>@drawable/ic_category_salary</item>
+        <item>@drawable/ic_category_bonus</item>
+        <item>@drawable/ic_category_investment</item>
+        <item>@drawable/ic_category_deposit</item>
+    </array>
+
+    <array name="pie_chart_color_array">
+        <item>#699C02</item>
+        <item>#59B4FA</item>
+        <item>#BFB822</item>
+        <item>#70BF2B</item>
+        <item>#29F82E</item>
+        <item>#D58A3B</item>
+        <item>#88EC31</item>
+        <item>#D583EC</item>
+        <item>#8BC34A</item>
+    </array>
+
+    <array name="pie_chart_color_array2">
+        <item>#F4D954</item>
+        <item>#70BF2B</item>
+        <item>#D583EC</item>
+        <item>#8BC34A</item>
+        <item>#699C02</item>
+        <item>#88EC31</item>
+        <item>#60E4BA</item>
+        <item>#BFB822</item>
+        <item>#29F82E</item>
+    </array>
+</resources>

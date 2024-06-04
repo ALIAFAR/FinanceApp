@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bm_expenses"
+        android:icon="@drawable/ic_expenses"
+        android:title="Расходы"  />
+    <item
+        android:id="@+id/bm_income"
+        android:icon="@drawable/ic_money"
+        android:title="Доходы"  />
+    <item
+        android:id="@+id/bm_categories"
+        android:icon="@drawable/ic_categories"
+        android:title="Категории"  />
+    <item
+        android:id="@+id/bm_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Настройки" />
+</menu>

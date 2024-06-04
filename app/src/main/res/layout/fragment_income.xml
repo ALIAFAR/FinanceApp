@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.IncomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Баланс: "
+                        android:textSize="20sp"
+                        android:background="@android:color/holo_green_light" />
+
+                    <TextView
+                        android:id="@+id/tvIncomeByDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="8dp"
+                        android:text="Доходы за день: "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvIncomeByMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="8dp"
+                        android:text="Доходы за месяц: "
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvIncomeByYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Доходы за год: "
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnShowAllIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:text="Вывести список доходов" />
+
+            <Button
+                android:id="@+id/btnAddIncome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:text="Добавить доход" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="4dp">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChartIncome"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="400dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnPreviousMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:text="Предыдущий месяц" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

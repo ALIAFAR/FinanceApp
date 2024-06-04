@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivCategoryIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                tools:src="@drawable/ic_category_afternoon_tea" />
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/color_2"
+                tools:text="Название категории" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvExpenseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="18sp"
+            tools:text="Название расхода" />
+
+        <TextView
+            android:id="@+id/tvSum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/color_highlight"
+            android:textSize="18sp"
+            tools:text="Сумма" />
+
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            tools:text="Комментарий" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/color_highlight"
+            app:cardCornerRadius="4dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                tools:text="Дата" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

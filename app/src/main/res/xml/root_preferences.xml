@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Лимит расходов на месяц">
+
+        <com.f.financeapp.ui.preferences.NumericEditTextPreference
+            app:key="limit"
+            app:title="Лимит расходов в рублях"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Оповещение при превышении лимита расходов">
+
+        <SwitchPreferenceCompat
+            app:dependency="limit"
+            app:key="notify_limit"
+            app:summaryOff="Вам не будет отправлено оповещение при превышении лимита расходов"
+            app:summaryOn="При каждом превышении лимита расходов вам будет отправлено оповещение"
+            app:title="Отправка оповещений" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
